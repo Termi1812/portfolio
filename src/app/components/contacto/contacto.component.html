@@ -1,0 +1,22 @@
+<section class="section" id="contacto">
+  <p class="section-label">contacto</p>
+  <h2 class="section-title">Hablemos</h2>
+
+  <p class="contacto-intro">¿Tienes un proyecto en mente o quieres conocerme mejor? No dudes en escribirme.</p>
+
+  <div class="contacto-grid">
+    @for (item of contacto; track item.label) {
+      <a [href]="item.url" target="_blank" class="contacto-card">
+        <div class="contacto-icono">{{ item.icono }}</div>
+        <div>
+          <p class="contacto-label">{{ item.label }}</p>
+          <p class="contacto-valor">{{ item.valor }}</p>
+        </div>
+      </a>
+    }
+  </div>
+
+  <div class="footer">
+    <p>Diseñado y desarrollado por <span class="gradient-text">Aritz Ciriza</span> · 2026</p>
+  </div>
+</section>

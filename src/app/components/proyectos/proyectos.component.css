@@ -1,0 +1,95 @@
+.proyectos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 16px;
+}
+
+.proyecto-card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 0.5px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  padding: 24px;
+  position: relative;
+  overflow: hidden;
+  transition: border-color 0.2s ease, background 0.2s ease, transform 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.proyecto-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(135deg, #a78bfa, #f472b6);
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.proyecto-card:hover {
+  border-color: rgba(167, 139, 250, 0.3);
+  background: rgba(167, 139, 250, 0.05);
+  transform: translateY(-4px);
+}
+
+.proyecto-card:hover::before {
+  opacity: 1;
+}
+
+.proyecto-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.proyecto-icono {
+  font-size: 28px;
+}
+
+.proyecto-link {
+  font-size: 12px;
+  color: #a78bfa;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.proyecto-link:hover {
+  color: #f472b6;
+}
+
+.proyecto-nombre {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.proyecto-desc {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.55);
+  line-height: 1.7;
+  flex: 1;
+}
+
+.proyecto-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 4px;
+}
+
+.proyecto-tag {
+  font-size: 11px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 0.5px solid rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+  padding: 3px 8px;
+  color: #a78bfa;
+}
+
+@media (max-width: 768px) {
+  .proyectos-grid {
+    grid-template-columns: 1fr;
+  }
+}

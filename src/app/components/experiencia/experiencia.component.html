@@ -1,0 +1,39 @@
+<section class="section" id="experiencia">
+  <p class="section-label">experiencia</p>
+  <h2 class="section-title">Trayectoria profesional</h2>
+
+  <div class="timeline">
+    @for (exp of experiencias; track exp.empresa) {
+      <div class="exp-item">
+        <div class="exp-linea">
+          <div class="exp-dot"></div>
+          <div class="exp-line"></div>
+        </div>
+        <div class="exp-content">
+          <div class="exp-header">
+            <div>
+              <p class="exp-empresa">{{ exp.empresa }}</p>
+              <p class="exp-rol">{{ exp.rol }}</p>
+              <p class="exp-fecha">{{ exp.fecha }} · {{ exp.ubicacion }}</p>
+            </div>
+            @if (exp.actual) {
+              <span class="badge-actual">actual</span>
+            }
+          </div>
+          <ul class="exp-lista">
+            @for (item of exp.descripcion; track item) {
+              <li>{{ item }}</li>
+            }
+          </ul>
+          <div class="exp-tags">
+            @for (tech of exp.techs; track tech) {
+              <span class="exp-tag">{{ tech }}</span>
+            }
+          </div>
+        </div>
+      </div>
+    }
+  </div>
+</section>
+
+<div class="divider"></div>
