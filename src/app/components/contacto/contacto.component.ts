@@ -14,8 +14,8 @@ export class ContactoComponent {
     {
       icono: '📧',
       label: 'email',
-      valor: 'aritz.ciriza@gmail.com',
-      url: 'mailto:aritz.ciriza@gmail.com'
+      valor: 'aritzciriza@gmail.com',
+      url: 'mailto:aritzciriza@gmail.com'
     },
     {
       icono: '💼',
