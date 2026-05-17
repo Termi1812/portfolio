@@ -24,7 +24,7 @@
   left: 0;
   right: 0;
   height: 2px;
-  background: linear-gradient(135deg, #a78bfa, #f472b6);
+  background: linear-gradient(135deg, #3b82f6, #06b6d4);
   opacity: 0;
   transition: opacity 0.2s ease;
 }
@@ -51,7 +51,7 @@
 
 .edu-centro {
   font-size: 13px;
-  color: #a78bfa;
+  color: #3b82f6;
   margin-bottom: 4px;
 }
 

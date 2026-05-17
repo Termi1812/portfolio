@@ -1,6 +1,6 @@
 <section class="section" id="proyectos">
-  <p class="section-label">proyectos</p>
-  <h2 class="section-title">Proyectos destacados</h2>
+  <p class="section-label">{{ idiomaService.t.proyectos.label }}</p>
+  <h2 class="section-title">{{ idiomaService.t.proyectos.titulo }}</h2>
 
   <div class="proyectos-grid">
     @for (proyecto of proyectos; track proyecto.nombre) {
@@ -8,11 +8,11 @@
         <div class="proyecto-header">
           <span class="proyecto-icono">{{ proyecto.icono }}</span>
           @if (proyecto.url) {
-            <a [href]="proyecto.url" target="_blank" class="proyecto-link">ver proyecto →</a>
+            <a [href]="proyecto.url" target="_blank" class="proyecto-link">{{ idiomaService.t.proyectos.verProyecto }}</a>
           }
         </div>
         <h3 class="proyecto-nombre">{{ proyecto.nombre }}</h3>
-        <p class="proyecto-desc">{{ proyecto.descripcion }}</p>
+        <p class="proyecto-desc">{{ idiomaService.idioma() === 'es' ? proyecto.descripcion : proyecto.descripcionEn }}</p>
         <div class="proyecto-tags">
           @for (tech of proyecto.techs; track tech) {
             <span class="proyecto-tag">{{ tech }}</span>
@@ -22,5 +22,4 @@
     }
   </div>
 </section>
-
 <div class="divider"></div>

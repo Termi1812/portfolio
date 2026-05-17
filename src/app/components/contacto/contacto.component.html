@@ -1,15 +1,15 @@
 <section class="section" id="contacto">
-  <p class="section-label">contacto</p>
-  <h2 class="section-title">Hablemos</h2>
+  <p class="section-label">{{ idiomaService.t.contacto.label }}</p>
+  <h2 class="section-title">{{ idiomaService.t.contacto.titulo }}</h2>
 
-  <p class="contacto-intro">¿Tienes un proyecto en mente o quieres conocerme mejor? No dudes en escribirme.</p>
+  <p class="contacto-intro">{{ idiomaService.t.contacto.intro }}</p>
 
   <div class="contacto-grid">
     @for (item of contacto; track item.label) {
       <a [href]="item.url" target="_blank" class="contacto-card">
         <div class="contacto-icono">{{ item.icono }}</div>
         <div>
-          <p class="contacto-label">{{ item.label }}</p>
+          <p class="contacto-label">{{ idiomaService.idioma() === 'es' ? item.label : item.labelEn }}</p>
           <p class="contacto-valor">{{ item.valor }}</p>
         </div>
       </a>
@@ -17,6 +17,6 @@
   </div>
 
   <div class="footer">
-    <p>Diseñado y desarrollado por <span class="gradient-text">Aritz Ciriza</span> · 2026</p>
+    <p>{{ idiomaService.t.contacto.footer }} <span class="gradient-text">Aritz Ciriza</span> · 2025</p>
   </div>
 </section>

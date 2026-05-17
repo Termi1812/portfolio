@@ -1,13 +1,13 @@
 <section class="section" id="habilidades">
-  <p class="section-label">habilidades</p>
-  <h2 class="section-title">Stack tecnológico</h2>
+  <p class="section-label">{{ idiomaService.t.habilidades.label }}</p>
+  <h2 class="section-title">{{ idiomaService.t.habilidades.titulo }}</h2>
 
   <div class="skills-grid">
     @for (categoria of categorias; track categoria.nombre) {
       <div class="skill-card">
-        <p class="skill-category">{{ categoria.nombre }}</p>
+        <p class="skill-category">{{ idiomaService.idioma() === 'es' ? categoria.nombre : categoria.nombreEn }}</p>
         <div class="skill-tags">
-          @for (tech of categoria.techs; track tech) {
+          @for (tech of (idiomaService.idioma() === 'es' ? categoria.techs : categoria.techsEn); track tech) {
             <span class="skill-tag">{{ tech }}</span>
           }
         </div>
@@ -15,5 +15,4 @@
     }
   </div>
 </section>
-
 <div class="divider"></div>

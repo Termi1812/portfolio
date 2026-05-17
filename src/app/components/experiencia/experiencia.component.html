@@ -1,6 +1,6 @@
 <section class="section" id="experiencia">
-  <p class="section-label">experiencia</p>
-  <h2 class="section-title">Trayectoria profesional</h2>
+  <p class="section-label">{{ idiomaService.t.experiencia.label }}</p>
+  <h2 class="section-title">{{ idiomaService.t.experiencia.titulo }}</h2>
 
   <div class="timeline">
     @for (exp of experiencias; track exp.empresa) {
@@ -13,15 +13,15 @@
           <div class="exp-header">
             <div>
               <p class="exp-empresa">{{ exp.empresa }}</p>
-              <p class="exp-rol">{{ exp.rol }}</p>
-              <p class="exp-fecha">{{ exp.fecha }} · {{ exp.ubicacion }}</p>
+              <p class="exp-rol">{{ idiomaService.idioma() === 'es' ? exp.rol : exp.rolEn }}</p>
+              <p class="exp-fecha">{{ idiomaService.idioma() === 'es' ? exp.fecha : exp.fechaEn }} · {{ exp.ubicacion }}</p>
             </div>
             @if (exp.actual) {
-              <span class="badge-actual">actual</span>
+              <span class="badge-actual">{{ idiomaService.t.experiencia.actual }}</span>
             }
           </div>
           <ul class="exp-lista">
-            @for (item of exp.descripcion; track item) {
+            @for (item of (idiomaService.idioma() === 'es' ? exp.descripcion : exp.descripcionEn); track item) {
               <li>{{ item }}</li>
             }
           </ul>
@@ -35,5 +35,4 @@
     }
   </div>
 </section>
-
 <div class="divider"></div>

@@ -21,7 +21,7 @@
   left: 0;
   right: 0;
   height: 2px;
-  background: linear-gradient(135deg, #a78bfa, #f472b6);
+  background: linear-gradient(135deg, #3b82f6, #06b6d4);
   opacity: 0;
   transition: opacity 0.2s ease;
 }
@@ -62,7 +62,7 @@
 
 .skill-tag:hover {
   background: rgba(167, 139, 250, 0.15);
-  color: #a78bfa;
+  color: #3b82f6;
   border-color: rgba(167, 139, 250, 0.3);
 }
 

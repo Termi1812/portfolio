@@ -22,13 +22,13 @@
 }
 
 .glow-left {
-  background: #a78bfa;
+  background: #3b82f6;
   top: -100px;
   left: -150px;
 }
 
 .glow-right {
-  background: #f472b6;
+  background: #06b6d4;
   bottom: -100px;
   right: -150px;
 }
@@ -40,7 +40,7 @@
   border-radius: 20px;
   padding: 6px 16px;
   font-size: 12px;
-  color: #a78bfa;
+  color: #3b82f6;
   margin-bottom: 24px;
   animation: fadeInDown 0.6s ease forwards;
 }
@@ -55,7 +55,7 @@ h1 {
 }
 
 .gradient-text {
-  background: linear-gradient(135deg, #a78bfa, #f472b6, #fb923c);
+  background: linear-gradient(135deg, #3b82f6, #06b6d4, #fb923c);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -84,7 +84,7 @@ h1 {
   width: 6px;
   height: 6px;
   border-radius: 50%;
-  background: #a78bfa;
+  background: #3b82f6;
 }
 
 .hero-btns {
@@ -101,7 +101,7 @@ h1 {
   font-size: 14px;
   font-weight: 500;
   cursor: pointer;
-  background: linear-gradient(135deg, #a78bfa, #f472b6);
+  background: linear-gradient(135deg, #3b82f6, #06b6d4);
   color: white;
   border: none;
   transition: opacity 0.2s ease, transform 0.2s ease;

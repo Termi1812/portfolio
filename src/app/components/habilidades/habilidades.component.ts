@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { IdiomaService } from '../../services/idioma.service';
 
 @Component({
   selector: 'app-habilidades',
@@ -9,31 +10,44 @@ import { CommonModule } from '@angular/common';
   styleUrl: './habilidades.component.css'
 })
 export class HabilidadesComponent {
+  constructor(public idiomaService: IdiomaService) {}
 
   categorias = [
     {
       nombre: 'Back-end',
-      techs: ['Java', 'C#', '.NET', 'Spring Boot', 'PHP', 'Python']
+      nombreEn: 'Back-end',
+      techs: ['Java', 'C#', '.NET', 'Spring Boot', 'PHP', 'Python'],
+      techsEn: ['Java', 'C#', '.NET', 'Spring Boot', 'PHP', 'Python']
     },
     {
       nombre: 'Front-end',
-      techs: ['Angular', 'TypeScript', 'HTML5', 'CSS3', 'JavaScript']
+      nombreEn: 'Front-end',
+      techs: ['Angular', 'TypeScript', 'HTML5', 'CSS3', 'JavaScript'],
+      techsEn: ['Angular', 'TypeScript', 'HTML5', 'CSS3', 'JavaScript']
     },
     {
       nombre: 'Bases de datos',
-      techs: ['PostgreSQL', 'MySQL', 'DbVisualizer']
+      nombreEn: 'Databases',
+      techs: ['PostgreSQL', 'MySQL', 'DbVisualizer'],
+      techsEn: ['PostgreSQL', 'MySQL', 'DbVisualizer']
     },
     {
       nombre: 'Herramientas',
-      techs: ['Git', 'Docker', 'Azure', 'Unity', 'JIRA', 'Maven', 'Tomcat']
+      nombreEn: 'Tools',
+      techs: ['Git', 'Docker', 'Azure', 'Unity', 'JIRA', 'Maven', 'Tomcat'],
+      techsEn: ['Git', 'Docker', 'Azure', 'Unity', 'JIRA', 'Maven', 'Tomcat']
     },
     {
       nombre: 'Metodologías',
-      techs: ['Scrum', 'Principios SOLID', 'Trabajo en equipo']
+      nombreEn: 'Methodologies',
+      techs: ['Scrum', 'Principios SOLID', 'Trabajo en equipo'],
+      techsEn: ['Scrum', 'SOLID Principles', 'Teamwork']
     },
     {
       nombre: 'Idiomas',
-      techs: ['Español (Nativo)', 'Inglés (B1-B2)', 'Francés (Básico)']
+      nombreEn: 'Languages',
+      techs: ['Español (Nativo)', 'Inglés (B1-B2)', 'Francés (Básico)'],
+      techsEn: ['Spanish (Native)', 'English (B1-B2)', 'French (Basic)']
     }
   ];
 }

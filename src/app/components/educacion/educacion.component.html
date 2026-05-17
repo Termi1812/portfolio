@@ -1,13 +1,13 @@
 <section class="section" id="educacion">
-  <p class="section-label">educación</p>
-  <h2 class="section-title">Formación académica</h2>
+  <p class="section-label">{{ idiomaService.t.educacion.label }}</p>
+  <h2 class="section-title">{{ idiomaService.t.educacion.titulo }}</h2>
 
   <div class="educacion-grid">
     @for (edu of educacion; track edu.titulo) {
       <div class="edu-card">
         <div class="edu-icono">{{ edu.icono }}</div>
         <div class="edu-content">
-          <p class="edu-titulo">{{ edu.titulo }}</p>
+          <p class="edu-titulo">{{ idiomaService.idioma() === 'es' ? edu.titulo : edu.tituloEn }}</p>
           <p class="edu-centro">{{ edu.centro }}</p>
           <p class="edu-fecha">{{ edu.fecha }}</p>
         </div>
@@ -15,5 +15,4 @@
     }
   </div>
 </section>
-
 <div class="divider"></div>
