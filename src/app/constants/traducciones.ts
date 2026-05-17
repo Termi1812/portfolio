@@ -17,12 +17,13 @@ export const TRADUCCIONES: any = {
     sobreMi: {
       label: 'Sobre mí',
       titulo: 'Quién soy',
-      p1: 'Desarrollador Full-Stack con experiencia en desarrollo de aplicaciones web, automatización de procesos y soluciones de realidad virtual. Apasionado por la tecnología y el aprendizaje continuo.',
-      p2: 'He trabajado con tecnologías como Java, C#, .NET y Unity en entornos profesionales, aportando soluciones eficientes y creativas. Actualmente integrado en el departamento de Electromedicina de Cysnet, desarrollando soluciones para la Clínica Universitaria de Navarra.',
-      p3: 'Busco un entorno donde pueda seguir creciendo como programador y aportar valor real a los proyectos.',
+      p1: 'Soy desarrollador Full-Stack con experiencia en entornos profesionales reales — desde aplicaciones web para una aseguradora hasta soluciones de realidad virtual para el Complejo Hospitalario de Navarra.',
+      p2: 'Me muevo bien tanto en backend (Java, .NET, C#) como en frontend, y me gusta entender el problema antes de escribir la primera línea de código. Actualmente trabajo en Cysnet desarrollando herramientas para la Clínica Universitaria de Navarra.',
+      p3: 'Busco proyectos donde pueda seguir aprendiendo y donde el código que escriba tenga un impacto real.',
       anios: 'años de experiencia',
       empresas: 'empresas',
-      proyectos: 'proyectos'
+      proyectos: 'proyectos',
+      ingles : 'Inglés'
     },
     habilidades: {
       label: 'Habilidades',
@@ -55,7 +56,7 @@ export const TRADUCCIONES: any = {
       habilidades: 'Skills',
       experiencia: 'Experience',
       proyectos: 'Projects',
-      contacto: 'Contact'
+      contacto: 'Contact',
     },
     hero: {
       badge: 'Available for new projects',
@@ -67,12 +68,13 @@ export const TRADUCCIONES: any = {
     sobreMi: {
       label: 'About me',
       titulo: 'Who I am',
-      p1: 'Full-Stack Developer with experience in web application development, process automation and virtual reality solutions. Passionate about technology and continuous learning.',
-      p2: 'I have worked with technologies like Java, C#, .NET and Unity in professional environments, delivering efficient and creative solutions. Currently integrated in the Electromedicine department at Cysnet, developing solutions for the University Clinic of Navarra.',
-      p3: 'I\'m looking for an environment where I can keep growing as a developer and bring real value to projects.',
+      p1: 'Full-Stack developer with experience in real professional environments — from web applications for an insurance company to virtual reality solutions for the Complejo Hospitalario de Navarra.',
+      p2: 'I\'m comfortable working on both backend (Java, .NET, C#) and frontend, and I like to understand the problem before writing the first line of code. I\'m currently working at Cysnet, building tools for the Clínica Universitaria de Navarra.',
+      p3: 'I\'m looking for projects where I can keep growing and where the code I write makes a real difference.',
       anios: 'years of experience',
       empresas: 'companies',
-      proyectos: 'projects'
+      proyectos: 'projects',
+      ingles: 'English'
     },
     habilidades: {
       label: 'Skills',
